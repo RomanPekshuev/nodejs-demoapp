@@ -62,7 +62,7 @@ if (process.env.REDIS_SESSION_HOST) {
   sessionConfig.store = new RedisStore({ client: redisClient })
   console.log('### 📚 Session store configured using Redis')
 } else {
-  console.log('### 🎈 Session store not configured, sessions will not persist'
+  console.log('### 🎈 Session store not configured, sessions will not persist')
 }
 
 app.use(session(sessionConfig))
